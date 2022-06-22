@@ -1,16 +1,35 @@
-# listagem_produtos
+<h2>Aplicativo Mobile em Flutter(em desenvolvimento)
 
-A new Flutter project.
 
-## Getting Started
+<h3>Objetivos</h3>
 
-This project is a starting point for a Flutter application.
+O objetivo desse software é o consumo de uma API de produtos criada em Spring Boot em formato de CRUD, que pode ser conferida no link: https://github.com/MarhlonKorb/api-produtos-spring-boot
 
-A few resources to get you started if this is your first Flutter project:
+Também estou usando deste como aprendizado para entender o conceito de injeção de dependências e organização de projeto(divisão entre Controller, Repository e Service). 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<h2>Classe Produto e construtor</h2>
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![](https://github.com/MarhlonKorb/listagem_produtos/blob/master/imgs/classe.png)
+
+<h2>Classe abstrata</h2>
+
+![](https://github.com/MarhlonKorb/listagem_produtos/blob/master/imgs/classe-repository.png)
+
+<h2>Classe que recebe a implementação de IProdutoRepository</h2>
+
+![](https://github.com/MarhlonKorb/listagem_produtos/blob/master/imgs/produto-service.png)
+
+<h2>Classe que implementará IProduto\Repository e métodos de comunicação com a API</h2>
+
+![](https://github.com/MarhlonKorb/listagem_produtos/blob/master/imgs/produto-repository-api.png)
+
+<h2>Implementação dos métodos</h2>
+
+Implementação dos métodos contruídos no Service, Repository, Infra e da classe Produto para retornar uma lista de produtos utilizando o metodo GET criado e mapeado na API do Spring Boot
+
+![](https://github.com/MarhlonKorb/listagem_produtos/blob/master/imgs/interface-flutter.png)
+
+<h2>Resultado</h2>
+
+![](https://github.com/MarhlonKorb/listagem_produtos/blob/master/imgs/imagem-app.png)
+
